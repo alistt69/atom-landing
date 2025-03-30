@@ -1,0 +1,52 @@
+.first_section_container {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+  .girl {
+    width: 1600px;
+    display: flex;
+    margin-left: auto;
+  }
+
+  .mask_group {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.83) 70%, transparent);
+  }
+
+  .card {
+    position: absolute;
+    right: 750px;
+    top: 60vh;
+  }
+
+  .stats {
+    position: absolute;
+    right: 96px;
+    top: 50%;
+    transform: scale(.8) translateY(-50%);
+  }
+}
+
+@media (max-width: 1600px) {
+  .first_section_container {
+    .mask_group {
+      left: -50px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .first_section_container {
+    .girl {
+      transform: translateX(-360px);
+    }
+
+    .mask_group {
+      display: none;
+    }
+  }
+}

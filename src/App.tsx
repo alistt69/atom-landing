@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import classes from './classes.module.scss';
+import Girl from './pages/intro-page/images/girl.svg';
+import MaskGroup from './assets/mask_group.svg';
+import Card from './assets/card.svg';
+import Stats from './assets/stats.svg';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        <div className={classes.first_section_container}>
+            <img src={Girl} className={classes.girl}/>
+            <img src={MaskGroup} className={classes.mask_group}/>
+            <img src={Card} className={classes.card}/>
+            <img src={Stats} className={classes.stats}/>
+        </div>
+        yeah im gonna take my horse
+    </>
+  )
 }
 
 export default App;
